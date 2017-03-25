@@ -16,8 +16,7 @@
 
 @implementation RNTipsViewManager
 
-RCT_EXPORT_MODULE()
-@synthesize bridge = _bridge;
+RCT_EXPORT_MODULE();
 
 - (UIView *)view
 {
@@ -30,7 +29,7 @@ RCT_EXPORT_METHOD(cutImage:(int)tag callback:(RCTResponseSenderBlock)callback) {
     if ([view isKindOfClass:[RNTipsView class]]) {
       NSString *imageStr = [[view exportWithRect:view.bounds] base64EncodedStringWithOptions:0];
       if (imageStr) {
-        callback(@[imageStr]);
+        callback(@[[NSString stringWithFormat:@"data:image/png;base64,%@", imageStr]]);
       } else {
         callback(@[@"wrong view"]);
       }

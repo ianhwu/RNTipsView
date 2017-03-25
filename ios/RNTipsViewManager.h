@@ -8,6 +8,7 @@
 
 #import <React/RCTViewManager.h>
 #import <React/RCTBridgeModule.h>
+#import <React/RCTUIManager.h>
 
 @interface RNTipsViewManager : RCTViewManager<RCTBridgeModule>
 
