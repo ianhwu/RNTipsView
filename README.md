@@ -2,6 +2,7 @@
 
 you can draw on the view, and cut a image.
 
+![](https://github.com/MagicalYan/RNTipsView/blob/master/snapshot.gif)
 
 # Install
 npm i --save react-native-tipsview
