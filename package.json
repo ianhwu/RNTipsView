@@ -1,6 +1,6 @@
 {
   "name": "react-native-tipsview",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +18,5 @@
   "bugs": {
     "url": "https://github.com/MagicalYan/RNTipsView/issues"
   },
-  "homepage": "https://github.com/MagicalYan/RNTipsView#readme"
+  "homepage": "https://github.com/MagicalYan/RNTipsView"
 }
