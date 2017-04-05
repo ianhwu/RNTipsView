@@ -23,6 +23,8 @@ lineWidth: line width.
 
 lineColor: line color.
 
+cacheType: 0,default save image data to tmp, back tmp image file path. 1, save image to cache, back base64 string.
+
 # Example
 
 ```
