@@ -11,6 +11,9 @@
 
 @interface RNTipsView : UIView
 
+@property (nonatomic, assign) CGFloat lineWidth;
+@property (nonatomic, strong) UIColor *lineColor;
+
 - (NSData *)exportWithRect:(CGRect)rect;
 - (void)clear;
 

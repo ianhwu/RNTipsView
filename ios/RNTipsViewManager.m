@@ -23,6 +23,10 @@ RCT_EXPORT_MODULE();
   return [[RNTipsView alloc] init];
 }
 
+RCT_EXPORT_VIEW_PROPERTY(lineWidth, CGFloat);
+RCT_EXPORT_VIEW_PROPERTY(lineColor, UIColor);
+RCT_EXPORT_VIEW_PROPERTY(backgroundColor, UIColor);
+
 RCT_EXPORT_METHOD(cutImage:(int)tag callback:(RCTResponseSenderBlock)callback) {
   [self.bridge.uiManager addUIBlock:^(RCTUIManager *uiManager, NSDictionary<NSNumber *,UIView *> *viewRegistry) {
     RNTipsView *view = (RNTipsView *)viewRegistry[@(tag)];
