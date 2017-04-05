@@ -1,6 +1,6 @@
 # RNTipsView
 
-you can draw on the view, and cut a image.
+you can draw on the view, and cut an image.
 
 ![](https://github.com/MagicalYan/RNTipsView/blob/master/snapshot.gif?raw=true)
 
