@@ -14,8 +14,12 @@ npm i --save react-native-tipsview
 # Usage
 Founction:
 
-export: cut the TipsView, return the uri.
+export: cut the TipsView, return the uri.\n
 clear: clear the view that you drew.
+
+properties:
+lineWidth: line width.\n
+lineColor: line color.
 
 #Example
 
@@ -42,7 +46,7 @@ export default class tips extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TipsView ref='tipsView' style={styles.tipsViewStyle}>
+        <TipsView ref='tipsView' lineColor='red' lineWidth={8} style={styles.tipsViewStyle}>
           {
             this.state.imageURI.length > 0 ? (
               <Image source={{uri:this.state.imageURI}} style={styles.previewStyle}/>
@@ -63,7 +67,7 @@ export default class tips extends Component {
             console.warn(error);
           });
         }}>
-          <Text>{'cut image'}</Text>
+          <Text>{'cut'}</Text>
         </TouchableOpacity>
       </View>
     );
