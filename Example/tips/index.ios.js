@@ -26,7 +26,7 @@ export default class tips extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TipsView ref='tipsView' lineColor='red' lineWidth={8} style={styles.tipsViewStyle}>
+        <TipsView ref='tipsView' lineColor='red' cacheType={1} lineWidth={8} style={styles.tipsViewStyle}>
           {
             this.state.imageURI.length > 0 ? (
               <Image source={{uri:this.state.imageURI}} style={styles.previewStyle}/>
