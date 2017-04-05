@@ -37,7 +37,7 @@ export default class tips extends Component {
           this.refs.tipsView.clear();
           this.setState({imageURI:''});
         }}>
-          <Text>{'clear'}</Text>
+          <Text style={styles.text}>{'clear'}</Text>
         </TouchableOpacity>
 
         <TouchableOpacity onPress={()=>{
@@ -47,7 +47,7 @@ export default class tips extends Component {
             console.warn(error);
           });
         }}>
-          <Text>{'cut'}</Text>
+          <Text style={styles.text}>{'cut'}</Text>
         </TouchableOpacity>
       </View>
     );
@@ -69,16 +69,10 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  text: {
+    alignSelf: 'center',
+    padding: 20,
+  }
 });
 
 AppRegistry.registerComponent('tips', () => tips);
