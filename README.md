@@ -12,16 +12,18 @@ iOS only
 npm i --save react-native-tipsview
 
 # Usage
-Founction:
+## Founction:
 
-export: cut the TipsView, return the uri.\n
+export: cut the TipsView, return the uri.
+
 clear: clear the view that you drew.
 
-properties:
-lineWidth: line width.\n
+## properties:
+lineWidth: line width.
+
 lineColor: line color.
 
-#Example
+# Example
 
 ```
 import React, { Component } from 'react';
