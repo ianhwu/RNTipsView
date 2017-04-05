@@ -15,7 +15,7 @@ npm i --save react-native-tipsview
 Founction:
 
 export: cut the TipsView, return the uri.
-clear: clear the view that you drawn.
+clear: clear the view that you drew.
 
 #Example
 
