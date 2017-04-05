@@ -50,7 +50,7 @@ export default class tips extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TipsView ref='tipsView' lineColor='red' lineWidth={8} style={styles.tipsViewStyle}>
+        <TipsView ref='tipsView' lineColor='red' cacheType={1} lineWidth={8} style={styles.tipsViewStyle}>
           {
             this.state.imageURI.length > 0 ? (
               <Image source={{uri:this.state.imageURI}} style={styles.previewStyle}/>
@@ -61,7 +61,7 @@ export default class tips extends Component {
           this.refs.tipsView.clear();
           this.setState({imageURI:''});
         }}>
-          <Text>{'clear'}</Text>
+          <Text style={styles.text}>{'clear'}</Text>
         </TouchableOpacity>
 
         <TouchableOpacity onPress={()=>{
@@ -71,7 +71,7 @@ export default class tips extends Component {
             console.warn(error);
           });
         }}>
-          <Text>{'cut'}</Text>
+          <Text style={styles.text}>{'cut'}</Text>
         </TouchableOpacity>
       </View>
     );
@@ -93,16 +93,10 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  text: {
+    alignSelf: 'center',
+    padding: 20,
+  }
 });
 
 AppRegistry.registerComponent('tips', () => tips);
